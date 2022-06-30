@@ -236,12 +236,9 @@ class MainMenuState extends MusicBeatState
 						{
 							FlxFlicker.flicker(spr, 1, 0.06, false, false, function(flick:FlxFlicker)
 							{
-								var daChoice:String = optionShit[curSelected]
-		                            {						
-	                                       FlxTween.tween(FlxG.camera,{zoom, 5}, 1{ease: FlxEase.exploIn});
-                                               FlxTween.tween(FlxG.camera,{angle, 45}, 1{ease: FlxEase.exploIn});
-                                            }
-						switch (daChoice)
+								var daChoice:String = optionShit[curSelected];
+
+								switch (daChoice)
 								{
 									case 'story_mode':
 										MusicBeatState.switchState(new StoryMenuState());
@@ -276,7 +273,7 @@ class MainMenuState extends MusicBeatState
 
 		menuItems.forEach(function(spr:FlxSprite)
 		{
-			//spr.screenCenter(X);
+			
 		});
 	}
 
